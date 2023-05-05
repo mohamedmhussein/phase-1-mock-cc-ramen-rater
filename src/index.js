@@ -23,7 +23,7 @@ document.querySelector('#new-ramen').addEventListener('submit', event => {
 document.querySelector('#edit-ramen').addEventListener('submit', event => {
     event.preventDefault()
     document.querySelector('#rating-display').textContent = event.target.rating.value
-    document.querySelector('#comment-display').innerHTML = `${event.target.comment.value}`
+    document.querySelector('#comment-display').innerHTML = event.target.comment.value
 
 })
 
@@ -44,3 +44,5 @@ function uploadRamenImages(ramen){
     })
 
 }
+
+//testing commit 1
